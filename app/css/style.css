@@ -14,6 +14,44 @@ body {
   padding: 0;
   font-family: 'Public Sans', sans-serif;
   line-height: 1.3;
-  background-color: #2bb7da;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav {
+  padding: 20px;
+}
+
+.header-menu span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #2d314d;
+}
+
+.header-menu span:not(:last-child) {
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=style.css.map */
