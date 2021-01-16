@@ -17,7 +17,6 @@ body {
 
 a, a:visited, a:active {
     text-decoration: none;
-    color:$GrayishBlue;
 }
 
 
@@ -38,4 +37,13 @@ a, a:visited, a:active {
         align-items: center;
     }
 
+}
+
+.button {
+    padding: 1rem 2.18rem;
+    background: linear-gradient(to right, $LimeGreen, $BrightCyan) ;
+    border-radius: 50px;
+    color:white;
+    font-size: $font-sm;
+    font-weight: $font-bold;
 }
