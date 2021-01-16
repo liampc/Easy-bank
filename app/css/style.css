@@ -52,11 +52,35 @@ a, a:visited, a:active {
   border-radius: 50px;
   color: white;
   font-size: 0.875rem;
-  font-weight: 700;
+  font-weight: 400;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.button:hover {
+  opacity: 0.75;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
 }
 
 .header nav {
   padding: 20px;
+  height: 5rem;
+}
+
+.header-logo img {
+  width: 8.75rem;
+  height: 1.4375rem;
 }
 
 .header-menu span {
@@ -71,6 +95,37 @@ a, a:visited, a:active {
 }
 
 .header-links a {
+  position: relative;
   font-size: 0.875rem;
+  color: #9698a6;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.header-links a:not(:last-child) {
+  margin-right: 32px;
+}
+
+.header-links a::before {
+  content: " ";
+  display: block;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1.875rem;
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.header-links a:hover {
+  color: #2d314d;
+}
+
+.header-links a:hover::before {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
