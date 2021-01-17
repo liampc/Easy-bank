@@ -88,10 +88,28 @@ a, a:visited, a:active {
   width: 22px;
   height: 2px;
   background-color: #2d314d;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform-origin: 1px 1px;
+          transform-origin: 1px 1px;
 }
 
 .header-menu span:not(:last-child) {
   margin-bottom: 5px;
+}
+
+.header-menu.open span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.header-menu.open span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .header-links a {
