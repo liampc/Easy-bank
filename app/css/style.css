@@ -87,6 +87,10 @@ body {
   font-size: 1.125rem;
 }
 
+body.noscroll {
+  overflow: hidden;
+}
+
 .container {
   padding: 0 1.5rem;
 }
