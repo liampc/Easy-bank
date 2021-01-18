@@ -1,0 +1,24 @@
+.section1 {
+    
+    &-image {
+        position:relative;
+        background-image: url('/images/bg-intro-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 50% 50%;
+        min-height: 17.625rem;
+        
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url('/images/image-mockups.png');
+            background-repeat: no-repeat;
+            background-size: 90%;
+            background-position: center bottom;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+}
