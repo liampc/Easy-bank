@@ -1,21 +1,27 @@
 const burgerIcon = document.querySelector('#burger-icon')
 const header = document.querySelector('.header')
 const overlay = document.querySelector('.overlay')
+const fadedElems = document.querySelectorAll('.faded')
 
 burgerIcon.addEventListener('click', () => {
     console.log('burger')
 
     if (header.classList.contains('open')){
-        overlay.classList.remove('fade-in')
-        overlay.classList.add('fade-out')
         header.classList.remove('open')
+        fadedElems.forEach(elem => {
+            elem.classList.remove('fade-in')
+            elem.classList.add('fade-out')
+        })
+        
         
         
 
     } else {
         header.classList.add('open')
-        overlay.classList.remove('fade-out')
-        overlay.classList.add('fade-in')
+        fadedElems.forEach(elem => {
+            elem.classList.remove('fade-out')
+            elem.classList.add('fade-in')
+        })
     }
 
     
