@@ -73,6 +73,31 @@ a, a:visited, a:active {
   }
 }
 
+.header.open span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header.open .overlay {
+  position: fixed;
+  z-index: 1;
+  top: 60px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
+  background-image: linear-gradient(#2d314d, transparent);
+}
+
 .header nav {
   padding: 20px;
   height: 5rem;
@@ -96,20 +121,6 @@ a, a:visited, a:active {
 
 .header-menu span:not(:last-child) {
   margin-bottom: 5px;
-}
-
-.header-menu.open span:first-child {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.header-menu.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.header-menu.open span:last-child {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
 }
 
 .header-links a {

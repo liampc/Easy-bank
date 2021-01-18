@@ -1,5 +1,31 @@
 .header {
-    
+
+    &.open {
+
+        span:first-child{
+            transform: rotate(45deg)
+        }
+        span:nth-child(2){
+            opacity: 0;
+        }
+        span:last-child{
+            transform: rotate(-45deg)
+        }
+        
+        
+        .overlay {
+            position: fixed;
+            z-index: 1;
+            top:60px;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+            background-image: linear-gradient($DarkBlue, transparent);
+            
+        }
+    }
+
+
 
     nav {
         padding: 20px;
@@ -29,18 +55,6 @@
                 margin-bottom: 5px;
             }
 
-        }
-
-        &.open {
-            span:first-child{
-                transform: rotate(45deg)
-            }
-            span:nth-child(2){
-                opacity: 0;
-            }
-            span:last-child{
-                transform: rotate(-45deg)
-            }
         }
         
     }
@@ -84,6 +98,8 @@
 
     }
 
-   
+
+
 
 }
+
