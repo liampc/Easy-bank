@@ -1,5 +1,11 @@
 .section1 {
 
+    @include breakpoint-up(large) {
+        display: flex;
+        align-items: center;
+        
+    }
+
     &-image {
         position:relative;
         background-image: url('/images/bg-intro-mobile.svg');
@@ -7,6 +13,14 @@
         background-size: 100%;
         background-position: 50% 50%;
         min-height: 17.625rem;
+
+
+        @include breakpoint-up(large) {
+            flex: 1;
+            order: 2;
+            min-height: 41rem;
+            background-image: url('/images/bg-intro-desktop.svg');
+        }
         
 
         &::before {
@@ -25,6 +39,13 @@
         display: inline-block;
         text-align: center;
         font-weight: $font-light;
+
+
+        @include breakpoint-up(large) {
+            flex: 1;
+            order: 1;
+            
+        }
         
 
         h1 {
