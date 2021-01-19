@@ -92,7 +92,11 @@ body.noscroll {
 }
 
 .container {
-  padding: 0 1.5rem;
+  padding: 2.25rem 1.5rem 2.25rem 1.5rem;
+}
+
+h1, h2, h3 {
+  margin-top: 0px;
 }
 
 a, a:visited, a:active {
@@ -124,6 +128,7 @@ a, a:visited, a:active {
 }
 
 .button {
+  display: inline-block;
   padding: 1rem 2.18rem;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to right, #31d35c, #2bb7da);
@@ -277,5 +282,25 @@ a, a:visited, a:active {
   background-position: center bottom;
   height: 100%;
   width: 100%;
+}
+
+.section1-text {
+  display: inline-block;
+  text-align: center;
+  font-weight: 300;
+}
+
+.section1-text h1 {
+  color: #2d314d;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.1625rem;
+  margin-bottom: 1.5rem;
+}
+
+.section1-text p {
+  color: #9698a6;
+  margin-bottom: 2.35rem;
+  font-size: 0.9375rem;
 }
 /*# sourceMappingURL=style.css.map */

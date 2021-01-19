@@ -1,5 +1,5 @@
 .section1 {
-    
+
     &-image {
         position:relative;
         background-image: url('/images/bg-intro-mobile.svg');
@@ -21,4 +21,24 @@
         }
     }
 
+    &-text {
+        display: inline-block;
+        text-align: center;
+        font-weight: $font-light;
+        
+
+        h1 {
+            color:$DarkBlue;
+            font-size: 2rem;
+            font-weight: $font-light;
+            line-height: 2.1625rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            color: $GrayishBlue;
+            margin-bottom:2.35rem;
+            font-size: 0.9375rem; //15px;
+        }
+    }
 }
