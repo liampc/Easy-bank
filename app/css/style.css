@@ -92,9 +92,41 @@ body.noscroll {
 }
 
 .container {
-  padding: 2.25rem 1.5rem 2.25rem 1.5rem;
   max-width: 70rem;
   margin: 0 auto;
+}
+
+.container-pd-t {
+  padding-top: 2.25rem;
+}
+
+.container-pd-r {
+  padding-right: 1.5rem;
+}
+
+.container-pd-b {
+  padding-bottom: 2.25rem;
+}
+
+.container-pd-l {
+  padding-left: 1.5rem;
+}
+
+.container-pd-tb {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.container-pd-lr {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.container-pd-all {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 h1, h2, h3 {
