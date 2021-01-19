@@ -16,10 +16,11 @@
 
 
         @include breakpoint-up(large) {
-            flex: 1;
+            flex: 3;
             order: 2;
-            min-height: 41rem;
+            height: 41rem;
             background-image: url('/images/bg-intro-desktop.svg');
+            background-position: left center;
         }
         
 
@@ -42,7 +43,7 @@
 
 
         @include breakpoint-up(large) {
-            flex: 1;
+            flex: 2;
             order: 1;
             
         }
