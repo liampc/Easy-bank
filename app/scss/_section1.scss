@@ -1,10 +1,16 @@
 .section1 {
 
-    @include breakpoint-up(large) {
-        display: flex;
-        align-items: center;
-        
+    background-color: $VeryLightGray;
+
+    .container {
+
+        @include breakpoint-up(large) {
+            display: flex;
+            align-items: center;
+            
+        }
     }
+    
 
     &-image {
         position:relative;

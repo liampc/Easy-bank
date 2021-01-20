@@ -298,8 +298,12 @@ a, a:visited, a:active {
   text-align: center;
 }
 
+.section1 {
+  background-color: #fafafa;
+}
+
 @media (min-width: 64em) {
-  .section1 {
+  .section1 .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
