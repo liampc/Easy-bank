@@ -51,7 +51,7 @@
         @include breakpoint-up(large) {
             flex: 2;
             order: 1;
-            
+            text-align: left;
         }
         
 
@@ -61,12 +61,22 @@
             font-weight: $font-light;
             line-height: 2.1625rem;
             margin-bottom: 1.5rem;
+
+            @include breakpoint-up(large) {
+                font-size: 3.25rem;
+                line-height: 3.5rem;
+            }
         }
 
         p {
             color: $GrayishBlue;
-            margin-bottom:2.35rem;
+            margin-bottom: 2.35rem;
             font-size: 0.9375rem; //15px;
+
+            @include breakpoint-up(large) {
+                font-size: 1.0625rem;
+                line-height: 1.5rem;
+            }
         }
     }
 }

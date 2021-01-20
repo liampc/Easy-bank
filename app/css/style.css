@@ -361,6 +361,7 @@ a, a:visited, a:active {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    text-align: left;
   }
 }
 
@@ -372,9 +373,23 @@ a, a:visited, a:active {
   margin-bottom: 1.5rem;
 }
 
+@media (min-width: 64em) {
+  .section1-text h1 {
+    font-size: 3.25rem;
+    line-height: 3.5rem;
+  }
+}
+
 .section1-text p {
   color: #9698a6;
   margin-bottom: 2.35rem;
   font-size: 0.9375rem;
+}
+
+@media (min-width: 64em) {
+  .section1-text p {
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
