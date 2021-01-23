@@ -14,23 +14,28 @@
 
     &-image {
         position:relative;
-        background-image: url('/images/bg-intro-mobile.svg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: 50% 50%;
+        // background-image: url('/images/bg-intro-mobile.svg');
+        // background-repeat: no-repeat;
+        // background-size: 100%;
+        background-image: none;
+        // background-position: 50% 50%;
         min-height: 17.625rem;
 
 
-        @include breakpoint-up(large) {
-            flex: 3;
-            order: 2;
-            height: 41rem;
-            background-image: url('/images/bg-intro-desktop.svg');
-            background-position: left center;
-        }
-        
-
         &::before {
+            content: "";
+            position: absolute;
+            background-image: url('/images/bg-intro-mobile.svg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: 50% 50%;
+            height: 100%;
+            width: 100%
+        }
+
+
+
+        &::after {
             content: "";
             position: absolute;
             background-image: url('/images/image-mockups.png');
@@ -40,6 +45,57 @@
             height: 100%;
             width: 100%;
         }
+
+
+        @include breakpoint-up(medium) {
+
+            &::before {
+                background-size: 100%;
+                background-position: 50% 50%;
+                height: 100%;
+                width: 100%;
+            }
+
+            &::after {
+                background-size: 65%;
+                background-position: 50% 93%;
+                height: 100%;
+                width: 100%;
+            }
+
+
+
+        }
+
+        @include breakpoint-up(large) {
+            flex: 3;
+            order: 2;
+            height: 41rem;
+            background-image: none;
+
+            &::before {
+                background-image: url('/images/bg-intro-desktop.svg');
+                background-size: 147%;
+                background-position: 0% 179%;
+                height: 127%;
+                width: 125%
+            }
+
+            &::after {
+                background-size: 89%;
+                background-position: 234% 95%;
+                height: 116%;
+                width: 125%;
+            }
+
+
+
+
+
+        }
+        
+
+        
     }
 
     &-text {

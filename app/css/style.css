@@ -315,11 +315,45 @@ a, a:visited, a:active {
 
 .section1-image {
   position: relative;
+  background-image: none;
+  min-height: 17.625rem;
+}
+
+.section1-image::before {
+  content: "";
+  position: absolute;
   background-image: url("/images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 50% 50%;
-  min-height: 17.625rem;
+  height: 100%;
+  width: 100%;
+}
+
+.section1-image::after {
+  content: "";
+  position: absolute;
+  background-image: url("/images/image-mockups.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center bottom;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 40em) {
+  .section1-image::before {
+    background-size: 100%;
+    background-position: 50% 50%;
+    height: 100%;
+    width: 100%;
+  }
+  .section1-image::after {
+    background-size: 65%;
+    background-position: 50% 93%;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 @media (min-width: 64em) {
@@ -331,20 +365,21 @@ a, a:visited, a:active {
         -ms-flex-order: 2;
             order: 2;
     height: 41rem;
-    background-image: url("/images/bg-intro-desktop.svg");
-    background-position: left center;
+    background-image: none;
   }
-}
-
-.section1-image::before {
-  content: "";
-  position: absolute;
-  background-image: url("/images/image-mockups.png");
-  background-repeat: no-repeat;
-  background-size: 90%;
-  background-position: center bottom;
-  height: 100%;
-  width: 100%;
+  .section1-image::before {
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-size: 147%;
+    background-position: 0% 179%;
+    height: 127%;
+    width: 125%;
+  }
+  .section1-image::after {
+    background-size: 89%;
+    background-position: 234% 95%;
+    height: 116%;
+    width: 125%;
+  }
 }
 
 .section1-text {
