@@ -13,6 +13,7 @@ body {
     font-family: 'Public Sans', sans-serif;
     line-height: 1.3;
     font-size: $font-md;
+    height: 300vh;
 
     &.noscroll {
         overflow: hidden;

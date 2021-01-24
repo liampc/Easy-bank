@@ -1,0 +1,24 @@
+.section2 {
+
+    &-container {
+
+        @include breakpoint-up(medium){
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+    }
+
+    &-item {
+        @include breakpoint-up(medium){
+            flex: 0 0 50%;
+        }
+
+        @include breakpoint-up(large){
+            flex: 1;
+        }
+    }
+
+    
+
+}
