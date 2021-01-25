@@ -121,8 +121,6 @@
         }
 
         p {
-            color: $GrayishBlue;
-            margin-bottom: 2.35rem;
             font-size: 0.9375rem; //15px;
 
             @include breakpoint-up(large) {

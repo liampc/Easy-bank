@@ -167,6 +167,12 @@ h3 {
   }
 }
 
+p {
+  color: #9698a6;
+  margin-bottom: 2.35rem;
+  font-size: 1rem;
+}
+
 a, a:visited, a:active {
   text-decoration: none;
 }
@@ -446,8 +452,6 @@ a, a:visited, a:active {
 }
 
 .section1-text p {
-  color: #9698a6;
-  margin-bottom: 2.35rem;
   font-size: 0.9375rem;
 }
 
@@ -492,6 +496,12 @@ a, a:visited, a:active {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+}
+
+@media (min-width: 64em) {
+  .section2-text p {
+    font-size: 1.0625rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

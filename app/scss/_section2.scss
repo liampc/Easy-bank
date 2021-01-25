@@ -28,6 +28,17 @@
         }
     }
 
+    
+    &-text {
+        
+        p {
+            @include breakpoint-up(large){
+                font-size: 1.0625rem;
+            }
+
+        }
+        
+    }
 
 
     
