@@ -1,0 +1,63 @@
+
+
+.section3 {
+
+    background-color: $VeryLightGray;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 2.375rem;
+    }
+    
+    &-grid {
+        display: grid;
+        gap: 1.875rem;
+
+        @include breakpoint-up(medium){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint-up(large){
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+    }
+
+    &-item {
+        overflow: hidden;
+        background-color: $White;
+        border-radius: 10px;
+        
+        
+    }
+
+    &-image {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 12.5rem;
+     
+    }
+
+    &-text {
+        text-align: left;
+        color: $GrayishBlue;
+        padding: 2rem 2rem 3rem 2rem;
+
+    }
+
+    &-author {
+        font-size: 0.75rem;
+        margin-bottom: 0.9375rem;
+    }
+    &-title {
+        font-size: 1rem;
+        color: $DarkBlue;
+        margin-bottom: 1.0625rem;
+        line-height: 1.2;
+    }
+    &-description {
+        font-size: .875rem;
+    }
+
+}
