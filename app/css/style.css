@@ -429,6 +429,10 @@ a, a:visited, a:active {
   }
 }
 
+.section2 {
+  background-color: #f3f4f6;
+}
+
 @media (min-width: 40em) {
   .section2-container {
     display: -webkit-box;

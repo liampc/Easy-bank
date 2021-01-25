@@ -1,5 +1,7 @@
 .section2 {
 
+    background-color: $LightGrayishBlue;
+
     &-container {
 
         @include breakpoint-up(medium){
