@@ -112,10 +112,6 @@
         
 
         h1 {
-            color:$DarkBlue;
-            font-size: 2rem;
-            font-weight: $font-light;
-            line-height: 2.1625rem;
             margin-bottom: 1.5rem;
 
             @include breakpoint-up(large) {

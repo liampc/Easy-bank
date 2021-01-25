@@ -61,9 +61,43 @@ body {
 
 }
 
+// headers 
+
 h1, h2, h3 {
     margin-top: 0px;
+    color:$DarkBlue;
+    font-weight: $font-light;
+    line-height: 2.1625rem;
+
 }
+
+h1 {
+    font-size: 2.375rem;
+
+    @include breakpoint-up(large){
+        font-size: 3.3125rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    
+    @include breakpoint-up(large){
+        font-size: 2.5625rem;
+    }
+
+}
+
+h3 {
+    font-size: 1.37rem;
+
+    @include breakpoint-up(large){
+        font-size: 1.625rem;
+    }
+}
+
+
+
 
 a, a:visited, a:active {
     text-decoration: none;

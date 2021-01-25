@@ -1,8 +1,15 @@
 .section2 {
 
     background-color: $LightGrayishBlue;
+    text-align: center;
+
+    @include breakpoint-up(medium) {
+        text-align: left;
+    }
+
 
     &-container {
+
 
         @include breakpoint-up(medium){
             display: flex;
@@ -20,6 +27,8 @@
             flex: 1;
         }
     }
+
+
 
     
 
