@@ -121,7 +121,7 @@
         }
 
         p {
-            font-size: 0.9375rem; //15px;
+            font-size: 0.9rem; //15px;
 
             @include breakpoint-up(large) {
                 font-size: 1.0625rem;

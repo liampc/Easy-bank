@@ -28,19 +28,31 @@
         }
     }
 
+
+    &-icon {
+        margin-bottom: 1.8125rem;
+    }
+
+    &-subheader {
+        margin-bottom: 1.8125rem;
+    }
     
     &-text {
-        
-        p {
-            @include breakpoint-up(large){
-                font-size: 1.0625rem;
-            }
+        margin-bottom: 2.375rem;
 
-        }
+        
+       
         
     }
 
+    p {
+        font-size: 0.9rem;
 
+        @include breakpoint-up(large){
+            font-size: 1.0625rem;
+        }
+
+    }
     
 
 }
