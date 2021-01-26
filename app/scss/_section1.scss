@@ -29,6 +29,7 @@
             
         }
 
+
         &::before {
 
 
@@ -55,7 +56,13 @@
             height: 116%;
             width: 125%;
 
-            @include breakpoint-up(medium){
+            @include breakpoint-down(medium){
+                width:100%;
+                background-size: 90%;
+                background-position: 50% 96%;
+            }
+
+            @include breakpoint-up(large){
                 
                 background-size: 95%;
                 background-position: 300% 86%
