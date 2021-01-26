@@ -630,5 +630,57 @@ a, a:visited, a:active {
 
 .footer {
   background-color: #2d314d;
+  color: white;
+  display: block;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer-logo {
+  height: 1.5625rem;
+  width: 8.875rem;
+  margin-bottom: 1.875rem;
+}
+
+.footer-icons {
+  margin-bottom: 1.875rem;
+}
+
+.footer-icons img {
+  height: 1.625rem;
+}
+
+.footer-icons a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 0.875rem;
+  line-height: 2;
+}
+
+.footer-links.col2 {
+  margin-bottom: 1.875rem;
+}
+
+.footer-cta {
+  margin-bottom: 1.875rem;
+}
+
+.footer-copyright {
+  margin-bottom: 1.875rem;
+  color: #9698a6;
+  font-size: 0.875rem;
 }
 /*# sourceMappingURL=style.css.map */
