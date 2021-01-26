@@ -5,9 +5,10 @@
     display: block;
     padding: 2.5rem;
     text-align: center;
+    display: block;
 
     a {
-        color: $White
+        color: $White;
     }
 
     &-container {
@@ -15,10 +16,14 @@
         @include breakpoint-up(large){
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 3fr;
-            grid-template-rows: 1fr auto;
+            grid-template-rows: 1fr 1fr;
             grid-template-areas: 
             "logo links1 links2 cta"
             "icons links1 links2 copyright";
+            gap: 1.5rem;
+            text-align: left;
+            align-items: center;
+            justify-items: start;
         }
 
     }
@@ -26,16 +31,22 @@
     &-logo {
         height: 1.5625rem;
         width: 8.875rem;
-        margin-bottom: 1.875rem;
+       
+        @include breakpoint-down(medium){
+            margin-bottom: 1.875rem;
+        }
 
         @include breakpoint-up(large){
             grid-area: logo;
+            justify-self: start;
         }
     }
 
     &-icons {
 
-        margin-bottom: 1.875rem;
+        @include breakpoint-down(medium){
+            margin-bottom: 1.875rem;
+        }
 
         img {
             height: 1.625rem;
@@ -54,12 +65,19 @@
         display: flex;
         flex-direction: column;
         font-size: 0.875rem;
-        line-height: 2;
+        line-height: 2.8;
+
+        @include breakpoint-down(medium){
+            line-height: 2;
+            
+        }   
+    
 
         &.col1 {
 
             @include breakpoint-up(large){
                 grid-area: links1;
+                
             }
 
         }
@@ -68,6 +86,7 @@
 
             @include breakpoint-up(large){
                 grid-area: links2;
+                margin-bottom: 0;
             }
         }
 
@@ -76,20 +95,27 @@
     }
 
     &-cta {
-        margin-bottom: 1.875rem;
-
+        @include breakpoint-down(medium){
+            margin-bottom: 1.875rem;
+        }
+        
         @include breakpoint-up(large){
             grid-area: cta;
+            justify-self: end;
         }
     }
 
     &-copyright {
-        margin-bottom: 1.875rem;
         color: $GrayishBlue;
         font-size: 0.875rem;
 
+        @include breakpoint-down(medium){
+            margin-bottom: 1.875rem;
+        }
+        
         @include breakpoint-up(large){
             grid-area: copyright;
+            justify-self: end;
         }
     }
 }

@@ -634,6 +634,7 @@ a, a:visited, a:active {
   display: block;
   padding: 2.5rem;
   text-align: center;
+  display: block;
 }
 
 .footer a {
@@ -646,26 +647,41 @@ a, a:visited, a:active {
     display: grid;
     -ms-grid-columns: 2fr 1fr 1fr 3fr;
         grid-template-columns: 2fr 1fr 1fr 3fr;
-    -ms-grid-rows: 1fr auto;
-        grid-template-rows: 1fr auto;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: "logo links1 links2 cta" "icons links1 links2 copyright";
+    gap: 1.5rem;
+    text-align: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: start;
   }
 }
 
 .footer-logo {
   height: 1.5625rem;
   width: 8.875rem;
-  margin-bottom: 1.875rem;
+}
+
+@media (max-width: 63.9375em) {
+  .footer-logo {
+    margin-bottom: 1.875rem;
+  }
 }
 
 @media (min-width: 64em) {
   .footer-logo {
     grid-area: logo;
+    -ms-grid-column-align: start;
+        justify-self: start;
   }
 }
 
-.footer-icons {
-  margin-bottom: 1.875rem;
+@media (max-width: 63.9375em) {
+  .footer-icons {
+    margin-bottom: 1.875rem;
+  }
 }
 
 .footer-icons img {
@@ -691,7 +707,13 @@ a, a:visited, a:active {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 0.875rem;
-  line-height: 2;
+  line-height: 2.8;
+}
+
+@media (max-width: 63.9375em) {
+  .footer-links {
+    line-height: 2;
+  }
 }
 
 @media (min-width: 64em) {
@@ -707,28 +729,40 @@ a, a:visited, a:active {
 @media (min-width: 64em) {
   .footer-links.col2 {
     grid-area: links2;
+    margin-bottom: 0;
   }
 }
 
-.footer-cta {
-  margin-bottom: 1.875rem;
+@media (max-width: 63.9375em) {
+  .footer-cta {
+    margin-bottom: 1.875rem;
+  }
 }
 
 @media (min-width: 64em) {
   .footer-cta {
     grid-area: cta;
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
 }
 
 .footer-copyright {
-  margin-bottom: 1.875rem;
   color: #9698a6;
   font-size: 0.875rem;
+}
+
+@media (max-width: 63.9375em) {
+  .footer-copyright {
+    margin-bottom: 1.875rem;
+  }
 }
 
 @media (min-width: 64em) {
   .footer-copyright {
     grid-area: copyright;
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
 }
 /*# sourceMappingURL=style.css.map */
