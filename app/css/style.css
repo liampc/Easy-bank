@@ -85,7 +85,9 @@ body {
   font-family: 'Public Sans', sans-serif;
   line-height: 1.5;
   font-size: 1.125rem;
-  height: 300vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   overflow-x: hidden;
 }
 
