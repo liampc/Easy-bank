@@ -640,10 +640,28 @@ a, a:visited, a:active {
   color: white;
 }
 
+@media (min-width: 64em) {
+  .footer-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr 1fr 3fr;
+        grid-template-columns: 2fr 1fr 1fr 3fr;
+    -ms-grid-rows: 1fr auto;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: "logo links1 links2 cta" "icons links1 links2 copyright";
+  }
+}
+
 .footer-logo {
   height: 1.5625rem;
   width: 8.875rem;
   margin-bottom: 1.875rem;
+}
+
+@media (min-width: 64em) {
+  .footer-logo {
+    grid-area: logo;
+  }
 }
 
 .footer-icons {
@@ -658,6 +676,12 @@ a, a:visited, a:active {
   margin-right: 1rem;
 }
 
+@media (min-width: 64em) {
+  .footer-icons {
+    grid-area: icons;
+  }
+}
+
 .footer-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -670,17 +694,41 @@ a, a:visited, a:active {
   line-height: 2;
 }
 
+@media (min-width: 64em) {
+  .footer-links.col1 {
+    grid-area: links1;
+  }
+}
+
 .footer-links.col2 {
   margin-bottom: 1.875rem;
+}
+
+@media (min-width: 64em) {
+  .footer-links.col2 {
+    grid-area: links2;
+  }
 }
 
 .footer-cta {
   margin-bottom: 1.875rem;
 }
 
+@media (min-width: 64em) {
+  .footer-cta {
+    grid-area: cta;
+  }
+}
+
 .footer-copyright {
   margin-bottom: 1.875rem;
   color: #9698a6;
   font-size: 0.875rem;
+}
+
+@media (min-width: 64em) {
+  .footer-copyright {
+    grid-area: copyright;
+  }
 }
 /*# sourceMappingURL=style.css.map */

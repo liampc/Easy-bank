@@ -12,13 +12,25 @@
 
     &-container {
 
+        @include breakpoint-up(large){
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 3fr;
+            grid-template-rows: 1fr auto;
+            grid-template-areas: 
+            "logo links1 links2 cta"
+            "icons links1 links2 copyright";
+        }
+
     }
 
     &-logo {
-        
         height: 1.5625rem;
         width: 8.875rem;
         margin-bottom: 1.875rem;
+
+        @include breakpoint-up(large){
+            grid-area: logo;
+        }
     }
 
     &-icons {
@@ -32,6 +44,10 @@
         a:not(:last-child){
             margin-right: 1rem;
         }
+
+        @include breakpoint-up(large){
+            grid-area: icons;
+        }
     }
 
     &-links {
@@ -42,22 +58,38 @@
 
         &.col1 {
 
+            @include breakpoint-up(large){
+                grid-area: links1;
+            }
+
         }
         &.col2 {
             margin-bottom: 1.875rem;
 
+            @include breakpoint-up(large){
+                grid-area: links2;
+            }
         }
+
+        
 
     }
 
     &-cta {
         margin-bottom: 1.875rem;
-        
+
+        @include breakpoint-up(large){
+            grid-area: cta;
+        }
     }
 
     &-copyright {
         margin-bottom: 1.875rem;
         color: $GrayishBlue;
         font-size: 0.875rem;
+
+        @include breakpoint-up(large){
+            grid-area: copyright;
+        }
     }
 }
