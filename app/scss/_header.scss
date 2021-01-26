@@ -19,6 +19,10 @@
     nav {
         padding: 20px;
         height: 4rem;
+
+        @include breakpoint-up(large){
+            height: 5rem;
+        }
     }
 
     &-logo  {
@@ -68,7 +72,7 @@
                 position:absolute;
                 left: 0;
                 right: 0;
-                bottom: -1.875rem;
+                bottom: -1.88rem;
                 background:linear-gradient(to right, $LimeGreen, $BrightCyan);
                 opacity: 0;
                 transition: opacity 300ms ease-in-out;

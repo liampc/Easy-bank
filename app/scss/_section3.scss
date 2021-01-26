@@ -67,6 +67,10 @@
         margin-bottom: 1.0625rem;
         line-height: 1.2;
 
+        &:hover {
+            color: $LimeGreen;
+        }
+
         @include breakpoint-up(large) {
             margin-bottom: 0.875rem;
         }

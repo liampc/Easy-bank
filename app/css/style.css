@@ -251,6 +251,12 @@ a, a:visited, a:active {
   height: 4rem;
 }
 
+@media (min-width: 64em) {
+  .header nav {
+    height: 5rem;
+  }
+}
+
 .header-logo img {
   width: 8.75rem;
   height: 1.4375rem;
@@ -290,7 +296,7 @@ a, a:visited, a:active {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -1.875rem;
+  bottom: -1.88rem;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to right, #31d35c, #2bb7da);
   opacity: 0;
@@ -620,6 +626,10 @@ a, a:visited, a:active {
   line-height: 1.2;
 }
 
+.section3-title:hover {
+  color: #31d35c;
+}
+
 @media (min-width: 64em) {
   .section3-title {
     margin-bottom: 0.875rem;
@@ -680,24 +690,29 @@ a, a:visited, a:active {
   }
 }
 
+.footer-icons a:not(:last-child) {
+  margin-right: 1rem;
+}
+
 @media (max-width: 63.9375em) {
   .footer-icons {
     margin-bottom: 1.875rem;
   }
 }
 
-.footer-icons img {
-  height: 1.625rem;
-}
-
-.footer-icons a:not(:last-child) {
-  margin-right: 1rem;
-}
-
 @media (min-width: 64em) {
   .footer-icons {
     grid-area: icons;
   }
+}
+
+.footer-icons a svg path {
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.footer-icons a svg path:hover {
+  fill: #31d35c;
 }
 
 .footer-links {
@@ -716,6 +731,15 @@ a, a:visited, a:active {
   .footer-links {
     line-height: 2;
   }
+}
+
+.footer-links a {
+  -webkit-transition: color 120ms ease-in-out;
+  transition: color 120ms ease-in-out;
+}
+
+.footer-links a:hover {
+  color: #31d35c;
 }
 
 @media (min-width: 64em) {
