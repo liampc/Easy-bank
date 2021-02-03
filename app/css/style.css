@@ -364,7 +364,7 @@ a, a:visited, a:active {
 .section1-image {
   position: relative;
   min-height: 17.625rem;
-  background-image: url("/images/bg-intro-mobile.svg");
+  background-image: url("../../images/bg-intro-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -387,7 +387,7 @@ a, a:visited, a:active {
   .section1-image::before {
     content: "";
     position: absolute;
-    background-image: url("/images/bg-intro-desktop.svg");
+    background-image: url("../../images/bg-intro-desktop.svg");
     background-size: 145%;
     background-position: 0 85%;
     background-repeat: no-repeat;
@@ -399,7 +399,7 @@ a, a:visited, a:active {
 .section1-image::after {
   content: "";
   position: absolute;
-  background-image: url("/images/image-mockups.png");
+  background-image: url("../../images/image-mockups.png");
   background-repeat: no-repeat;
   background-size: 95%;
   background-position: center bottom;
